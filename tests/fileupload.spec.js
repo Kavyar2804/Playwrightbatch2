@@ -17,7 +17,7 @@ test('single file ', async({page}) => {
     
 });
 
-test.only('Multiple files ', async({page}) => {
+test('Multiple files ', async({page}) => {
     await page.goto('https://testautomationpractice.blogspot.com/')
     console.log(__dirname);
     await page.locator('#multipleFilesInput').scrollIntoViewIfNeeded()

@@ -13,7 +13,7 @@ test('Read data from excel', async({page}) => {
    
 });
 
-test.only('Write data to excel', async({page}) => {
+test('Write data to excel', async({page}) => {
     const book =new excel.Workbook()
     await book.xlsx.readFile('./testdata/tdata.xlsx')
     const sheet= book.addWorksheet('ABC')
