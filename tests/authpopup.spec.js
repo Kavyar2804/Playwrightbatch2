@@ -18,7 +18,7 @@ test('authentication', async({browser}) => {
  
 });
 
-test.only('notificationpopup', async({browser}) => {
+test('notificationpopup', async({browser}) => {
 
     const context = await browser.newContext({
 

@@ -182,8 +182,7 @@ test('keyboard actions', async({page}) => {
         await page.waitForTimeout(2000)
 });
 
-test.only
-('scroll', async({page}) => {
+test('scroll', async({page}) => {
 
     await page.goto('https://demoapps.qspiders.com/ui/scroll/newTabVertical')
      await page.waitForTimeout(2000)
@@ -197,7 +196,7 @@ test.only
     
 });
 
-test.only('rightclick', async({page}) => {
+test('rightclick', async({page}) => {
 
     await page.goto('https://demoapps.qspiders.com/ui/button/buttonRight?sublist=1')
     await page.getByRole('button', {name: 'Right Click'}).click({button:'right'})

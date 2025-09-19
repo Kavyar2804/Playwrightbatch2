@@ -15,7 +15,7 @@ console.log(download.suggestedFilename());
 expect(download.suggestedFilename()).toBe('mytextfile.txt')
 });
 
-test.only('Screenchoot', async({page}) => {
+test('Screenchoot', async({page}) => {
 
     await page.goto('https://demoapps.qspiders.com/ui?scenario=1')
     await page.waitForLoadState('networkidle')
